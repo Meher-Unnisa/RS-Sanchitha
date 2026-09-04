@@ -70,7 +70,7 @@ export default function App() {
             <svg onClick={() => setShowSearch(!showSearch)} width="22" height="22" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24" style={{cursor:"pointer"}}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             
             {/* PHOTO INSTEAD OF R */}
-            <img src={PROFILE_PHOTO} alt="profile" style={{ width: 30, height: 30, borderRadius: "50%", objectFit:"cover", border:"2px solid white", cursor:"pointer" }} />
+            <img src={PROFILE_PHOTO} alt="profile" style={{ width: 46, height: 46, borderRadius: "50%", objectFit: "cover", objectPosition: "top center", border: "2px solid white" }} />
           </div>
         </div>
 
