@@ -7,7 +7,7 @@ const builder = imageUrlBuilder(client);
 const urlFor = (s) => (s ? builder.image(s).width(600).url() : "");
 
 // CHANGE THIS PHOTO LINK TO YOUR PHOTO
-const PROFILE_PHOTO = "profile.jpg"; // put your photo url here or /profile.jpg
+const PROFILE_PHOTO = "/profile.jpg"; // put your photo url here or /profile.jpg
 
 const TOP_MENU = ["Trending", "Photo Gallery", "Mann Ki Baat", "NaMo Merchandise"];
 const MENU = [
