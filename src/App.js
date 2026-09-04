@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 
-const client = createClient({ projectId: "05o003r1", dataset: "production", useCdn: true, apiVersion: "2023-05-03" });
+const client = createClient({ projectId: "05o003r1", dataset: "production", useCdn: false, apiVersion: "2023-05-03" });
 const builder = imageUrlBuilder(client);
 const urlFor = (s) => (s ? builder.image(s).width(600).url() : "");
 
 // CHANGE THIS PHOTO LINK TO YOUR PHOTO
-const PROFILE_PHOTO = "https://i.pravatar.cc/100"; // put your photo url here or /profile.jpg
+const PROFILE_PHOTO = "profile.jpg"; // put your photo url here or /profile.jpg
 
 const TOP_MENU = ["Trending", "Photo Gallery", "Mann Ki Baat", "NaMo Merchandise"];
 const MENU = [
